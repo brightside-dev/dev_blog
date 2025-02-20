@@ -1,0 +1,11 @@
+{{define "content"}}
+{{with .Data}}
+<div>
+    <h2 class="left"><a href="">{{ .Title }}</a></h2>
+    <p>{{ .Content }}</p>
+    <p class="publish_date">{{ .Date }}</p>
+</div>
+{{else}}
+<p>Article not found.</p>
+{{end}}
+{{end}}

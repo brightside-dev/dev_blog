@@ -1,0 +1,11 @@
+{{define "content"}}
+{{range .Data}} 
+<div>
+    <h2 class="left"><a href="/article/{{ .id}}">{{ .title }}</a></h2>
+    <p> {{ .excerpt }} </p>
+    <p class="publish_date">
+        {{ .date }}
+    </p>
+</div>
+{{end}}
+{{end}}
